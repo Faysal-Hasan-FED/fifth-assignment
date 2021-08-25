@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Pro Shop </title>
+    <!-- tailwind css link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!-- body starts -->
+
+<body>
+    <main>
+        <section class="grid md:grid-cols-2 w-4/5 mx-auto m-8">
+            <article>
+                <img class="w-9/12" src="images/mac.png" alt="">
+            </article>
+            <article>
+                <div class="mb-4">
+                    <h1 class="text-4xl font-medium mb-4">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="text-base">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency
+                        cores,7-core
+                        GPU,and 16-core
+                        Neutral Engine 8GB unified memory,256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+                        Magic
+                        Keyboard-US English</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-2xl font-medium mb-2">Memory</h4>
+                    <button id="primary-memory" class="border-2 p-2 rounded hover:bg-black hover:text-white text-sm">8GB
+                        unified
+                        memory</button>
+                    <button id="extra-memory" class="border-2 p-2 rounded hover:bg-black hover:text-white text-sm">16GB
+                        unified
+                        memory</button>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-2xl font-medium mb-2">Storage</h4>
+                    <button id="primary-storage"
+                        class="border-2 p-2  rounded hover:bg-black hover:text-white text-sm">256GB
+                        SSD
+                        storage</button>
+                    <button id="secondary-storage"
+                        class="border-2 p-2  rounded hover:bg-black hover:text-white text-sm">512GB
+                        SSD
+                        storage</button>
+                    <button id="tertiary-storage"
+                        class="border-2 p-2  rounded hover:bg-black hover:text-white text-sm">1TB
+                        SSD
+                        storage</button>
+                </div>
+                <div class="mb-8">
+                    <h4 class="text-2xl font-medium mb-2">Choose your delivery option</h4>
+                    <button id="delay-delivery"
+                        class="border-2 text-sm p-2  rounded hover:bg-black hover:text-white">Friday,Aug 27 FREE
+                        Prime
+                        Delivery</button>
+                    <button id="prime-delivery"
+                        class="border-2 text-sm p-2  rounded hover:bg-black hover:text-white">Sunday,Aug 22
+                        Delivery Charge
+                        $20</button>
+                </div>
+                <div class="mb-8">
+                    <div class="flex justify-between ">
+                        <h3 class="text-xl font-medium">Best Price</h3>
+                        <h3 class="text-xl font-medium">$ <span id="best-price">1299</span></h3>
+                    </div>
+                    <hr class="mt-2">
+                    <div class="flex justify-between ">
+                        <h3 class="text-xl font-medium">Extra Memory Cost</h3>
+                        <h3 class="text-xl font-medium">$ <span id="memory-price">0</span></h3>
+                    </div>
+                    <hr class="mt-2">
+                    <div class="flex justify-between ">
+                        <h3 class="text-xl font-medium">Extra Storage Cost</h3>
+                        <h3 class="text-xl font-medium">$ <span id="storage-price">0</span></h3>
+                    </div>
+                    <hr class="mt-2">
+                    <div class="flex justify-between ">
+                        <h3 class="text-xl font-medium">Delivery charge</h3>
+                        <h3 class="text-xl font-medium">$ <span id="delivery-price">0</span></h3>
+                    </div>
+                    <hr class="border-black mt-2">
+                    <div class="flex justify-between ">
+                        <h3 class="text-xl font-medium">Total Price</h3>
+                        <h3 class="text-xl font-medium">$ <span id="total-price">1299</span></h3>
+                    </div>
+                    <hr class="mt-2">
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-2"> Add Promo Code </h4>
+                    <input type="text" placeholder="Add promo code" id="promo-code-field"
+                        class="border-2 rounded p-2 w-80">
+                    <button id="apply-button"
+                        class="border-2 p-2 rounded bg-red-500 w-20 text-white font-medium">Apply</button>
+                </div>
+
+            </article>
+
+        </section>
+        <hr class="w-4/5 mx-auto">
+        <section>
+            <h3 class="text-3xl font-medium text-center mt-4 mb-8">Total: $ <span id="grand-total">1299</span></h3>
+        </section>
+
+    </main>
+    <!-- js link -->
+    <script src="js/script.js"></script>
+
+</body>
+<!-- body ends -->
+
+</html>
